@@ -1,5 +1,33 @@
 <?php
-// Check for empty fields
+
+// Check request
+if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) OR empty($_SERVER['HTTP_X_REQUESTED_WITH']) OR strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+  exit('El acceso a este archivo no es válido.');    
+}
+
+// Recuperar variables post
+echo "<pre>"; print_r($_POST);
+
+// Recuperar información de campo de archivo
+echo "<pre>"; print_r($_FILES);
+
+/**
+ * Return data
+ */
+$data = array(
+	'response' => true,
+	'message' => 'Listo!'
+);
+echo json_encode($data);
+
+
+exit;
+
+
+
+
+
+
 if(empty($_POST['name']) || empty($_POST['email']) || !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
  echo json_encode(array('error'=>'true'));
  return false;
