@@ -142,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <form class="b-filter b-filter2 bg-grey" id="aplicacionForm" action="#" method="post">                    
+                <form class="b-filter b-filter2 bg-grey" id="aplicacionForm" action="#" method="post" enctype="multipart/form-data">                    
 					<div class="b-filter__inner">
                         <div class="container">
 							<h3 class="ui-title-block3">Información Personal</h3>
@@ -312,13 +312,13 @@
 									</div>
 									<div class="form-group col-md-2 col-sm-4">
 										<div class="custom-control custom-radio custom-control-inline">
-											<input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
+											<input type="radio" id="customRadioInline3" name="option_monthly_payment" value="Propietario" checked class="custom-control-input">
 											<label class="custom-control-label" for="customRadioInline3">Propietario</label>
 										</div>
 									</div>
 									<div class="form-group col-md-2 col-sm-4">
 										<div class="custom-control custom-radio custom-control-inline">
-											<input type="radio" id="customRadioInline4" name="customRadioInline4" class="custom-control-input">
+											<input type="radio" id="customRadioInline4" name="option_monthly_payment" value="Comprar-Lease" class="custom-control-input">
 											<label class="custom-control-label" for="customRadioInline4">Comprar-Lease</label>
 										</div>
 									</div>
@@ -358,13 +358,13 @@
 									</div>
 									<div class="form-group col-md-2 col-sm-4">
 										<div class="custom-control custom-radio custom-control-inline">
-											<input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input">
+											<input type="radio" id="customRadioInline5" name="option_vehicle_new" class="custom-control-input">
 											<label class="custom-control-label" for="customRadioInline5">Lease</label>
 										</div>
 									</div>
 									<div class="form-group col-md-2 col-sm-4">
 										<div class="custom-control custom-radio custom-control-inline">
-											<input type="radio" id="customRadioInline6" name="customRadioInline6" class="custom-control-input">
+											<input type="radio"  id="customRadioInline6" name="option_vehicle_new" class="custom-control-input">
 											<label class="custom-control-label" for="customRadioInline6">Comprar</label>
 										</div>
 									</div>
@@ -375,8 +375,8 @@
                         <div class="container">
 							<div class="form-row">
 								<div class="form-group custom-file col-md-5 col-sm-6">								
-									<label class="custom-file-label" for="customFileLang">Firma</label>
-									<input type="file" class="custom-file-input" id="customFileLang" name="customFileLang" lang="es"><br>
+									<label class="custom-file-label" for="image">Firma</label>
+									<input type="file" class="custom-file-input" id="image" name="image" lang="es"><br>
 									
 									<label for="modelo2">Nombre: </label>
 									<input type="text" class="form-control" id="nombre2" name="nombre2" placeholder="Nombre">
@@ -385,46 +385,46 @@
 								</div>							
 								<div class="form-group col-md-3 col-sm-6">									
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1">
+									  <input class="form-check-input" type="checkbox" value="Seguridad Social" id="defaultCheck1" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck1">Seguridad Social.</label>
 									</div>
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" name="defaultCheck2">
+									  <input class="form-check-input" type="checkbox" value="Prueba de Residencia" id="defaultCheck2" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck2">Prueba de Residencia.</label>
 									</div>
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" name="defaultCheck3">
+									  <input class="form-check-input" type="checkbox" value="Estatus Migratorio" id="defaultCheck3" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck3">Estatus Migratorio.</label>
 									</div>
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" name="defaultCheck4">
+									  <input class="form-check-input" type="checkbox" value="Últimos 3 Paystubs" id="defaultCheck4" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck4">Últimos 3 Paystubs.</label>
 									</div>
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" name="defaultCheck5">
+									  <input class="form-check-input" type="checkbox" value="Últimos 3 Estados de Cuenta" id="defaultCheck5" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck5">Últimos 3 Estados de Cuenta.</label>
 									</div>
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck6" name="defaultCheck6">
+									  <input class="form-check-input" type="checkbox" value="Licencia/ID" id="defaultCheck6" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck6">Licencia/ID.</label>
 									</div>
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck7" name="defaultCheck7">
+									  <input class="form-check-input" type="checkbox" value="Comercio de Registro" id="defaultCheck7" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck7">Comercio de Registro.</label>
 									</div>
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck8" name="defaultCheck8">
+									  <input class="form-check-input" type="checkbox" value="Comercio en Millaje" id="defaultCheck8" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck8">Comercio en Millaje.</label>
 									</div>
 									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck9" name="defaultCheck9">
+									  <input class="form-check-input" type="checkbox" value="Seguro" id="defaultCheck9" name="option_vehicle_new[]">
 									  <label class="form-check-label" for="defaultCheck9">Seguro.</label>
 									</div>
 								</div>		
 							</div>
 							<div class="form-row">
 								<div class="b-filter__btns">
-									<button class="btn btn-lg btn-primary">ENVIAR</button>
+									<button class="btn btn-lg btn-primary" id="btn_ajax_send_form">ENVIAR</button>
 								</div>
 							</div>
 						</div>
